@@ -11,7 +11,7 @@ export default class Camps {
   constructor(Aurelia, http) {
     this.token = localStorage['token'] || null;
     var myheaders = new Headers();
-    myheaders.append('Authorization', 'Bearer ' + this.token)
+    myheaders.append('Authorization', 'Bearer ' + this.token);
 
 
   http.configure(config => {
